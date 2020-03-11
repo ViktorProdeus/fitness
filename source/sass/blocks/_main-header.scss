@@ -1,0 +1,131 @@
+.main-header {
+  padding: 30px 0 50px;
+
+  color: white;
+
+  background-image: url("../img/header/bg@1x.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-header__top-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header__phone,
+.main-header__social-item {
+  transition: opacity 0.2s linear;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-header__phone {
+  font-family: "BebasNeue", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1;
+
+  color: white;
+}
+
+.main-header__inner {
+  display: flex;
+}
+
+.main-header__promo {
+  align-self: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 460px;
+  padding-right: 63px;
+  padding-top: 120px;
+
+  text-align: right;
+}
+
+.main-header__promo b {
+  margin-bottom: 25px;
+  width: 100%;
+  display: block;
+
+  font-family: "BebasNeue", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 49px;
+  line-height: 1;
+  letter-spacing: 1.5px;
+
+  color: white;
+}
+
+.main-header__text-col {
+  position: relative;
+  margin-bottom: 55px;
+}
+
+.main-header__promo h1 {
+  margin: 0;
+  margin-left: 90px;
+
+  font-family: "BebasNeue", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 109px;
+  line-height: 1;
+  letter-spacing: 1.3px;
+
+  color: white;
+}
+
+.main-header__promo p {
+  margin: 0;
+  width: 113px;
+
+  position: absolute;
+  left: 19px;
+  bottom: 35px;
+
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+
+  color: white;
+}
+
+.main-header__photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.main-header__social {
+  margin-top: auto;
+  margin-left: auto;
+  margin-bottom: 45px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header__social-item {
+  margin-top: 24px;
+  display: block;
+
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  text-transform: uppercase;
+
+  color: white;
+}
