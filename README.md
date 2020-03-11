@@ -1,4 +1,4 @@
-# Проект Акселератора «fitness» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Проект Акселератора «fitness»  [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 # ![Image of project «Фитнес центр»](https://github.com/ViktorProdeus/fitness/blob/master/fitness.jpg)
 
 * Вёрстка макета: [Посмотреть](https://viktorprodeus.github.io/fitness/build/).  
