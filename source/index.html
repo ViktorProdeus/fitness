@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Фитнес центр</title>
+  <link rel="preload" href="fonts/BebasNeue-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/BebasNeue-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -13,11 +18,11 @@
   <header class="main-header">
     <div class="container">
       <div class="main-header__top-line">
-        <a class="main-header__logo">
+        <a href="#" class="main-header__logo">
           <img src="img/logo.svg" width="89" height="20" alt="логотип">
         </a>
 
-        <a class="main-header__phone" href="tel:+8-800-555-55-55">8-800-555-55-55</a>
+        <a class="main-header__phone" href="tel:+8-800-555-55-55" aria-label="телефон компании">8-800-555-55-55</a>
       </div>
 
       <div class="main-header__inner">
@@ -39,14 +44,14 @@
 
         <div class="main-header__photo">
           <!-- 1х: 500px*556px; 2x: 1000px*1112px-->
-          <img src="img/header/sportsman@1x.jpg" width="500" height="556"
-            srcset="img/header/sportsman@1x.jpg 1x, img/header/sportsman@2x.jpg 2x" alt="фото атлета">
+          <img src="img/sportsman@1x.jpg" width="500" height="556"
+            srcset="img/sportsman@1x.jpg 1x, img/sportsman@2x.jpg 2x" alt="фото атлета">
         </div>
 
         <div class="main-header__social">
-          <a href="#" class="main-header__social-item">Fb</a>
-          <a href="#" class="main-header__social-item">Vk</a>
-          <a href="#" class="main-header__social-item">Ig</a>
+          <a href="#" class="main-header__social-item" aria-label="мы в Фейсбук">Fb</a>
+          <a href="#" class="main-header__social-item" aria-label="мы в Вконтакте">Vk</a>
+          <a href="#" class="main-header__social-item" aria-label="мы в Инстаграмм">Ig</a>
         </div>
       </div>
     </div>

@@ -10,18 +10,19 @@
 // 800 Black or Extra Bold or Heavy;
 // 900 Extra Black or Fat or Ultra Black
 
-@mixin font($f-name, $f-style, $f-weight, $f-url) {
+@mixin font($f-name, $f-style, $f-weight, $f-url, $display) {
   @font-face {
     font-family: $f-name;
     font-style: $f-style;
     font-weight: $f-weight;
-    src: url("#{$f-url}.woff2") format("woff2");
+    font-display: $display;
+    src: url("#{$f-url}.woff2") format("woff2"); // add font display
     src: url("#{$f-url}.woff") format("woff");
   }
 }
 
-@include font("BebasNeue", normal, 700, "../fonts/BebasNeue-Bold");
-@include font("BebasNeue", normal, 400, "../fonts/BebasNeue-Regular");
-@include font("Roboto", normal, 700, "../fonts/RobotoCondensed-Bold");
-@include font("Roboto", normal, 400, "../fonts/RobotoCondensed-Regular");
-@include font("Roboto", normal, 300, "../fonts/RobotoCondensed-light");
+@include font("BebasNeue", normal, 700, "../fonts/BebasNeue-Bold", swap);
+@include font("BebasNeue", normal, 400, "../fonts/BebasNeue-Regular", swap);
+@include font("Roboto", normal, 700, "../fonts/RobotoCondensed-Bold", swap);
+@include font("Roboto", normal, 400, "../fonts/RobotoCondensed-Regular", swap);
+@include font("Roboto", normal, 300, "../fonts/RobotoCondensed-light", swap);

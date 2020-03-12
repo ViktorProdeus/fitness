@@ -12,4 +12,5 @@ node_modules/
 npm-debug.*
 source/css/*.css
 source/css/*.map
+preview
 Thumbs.db
