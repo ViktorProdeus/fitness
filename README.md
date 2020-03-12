@@ -1,3 +1,10 @@
+# Проект Акселератора «fitness»
+# ![Image of project «Фитнес центр»](https://github.com/ViktorProdeus/fitness/blob/master/fitness.jpg)
+
+* Вёрстка макета: [Посмотреть](https://viktorprodeus.github.io/fitness/build/).  
+* Исполнитель: [Виктор Продеус](https://up.htmlacademy.ru/adaptive/16/user/814599).
+---
+
 # Gulp template Liga A
 ## Краткая инструкция по работе
 ### Для начала работы у вас должент быть установлен:
