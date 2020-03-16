@@ -16,7 +16,7 @@
     font-style: $f-style;
     font-weight: $f-weight;
     font-display: $display;
-    src: url("#{$f-url}.woff2") format("woff2"); // add font display
+    src: url("#{$f-url}.woff2") format("woff2");
     src: url("#{$f-url}.woff") format("woff");
   }
 }

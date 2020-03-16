@@ -1,0 +1,9 @@
+.hide-text {
+  display: none;
+}
+
+@media (min-width: $desktop-min) {
+  .hide-text {
+    display: block;
+  }
+}

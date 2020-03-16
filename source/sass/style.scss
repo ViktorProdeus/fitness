@@ -1,9 +1,13 @@
 @import "normalize";
 @import "fonts";
 @import "variables";
+@import "helpers";
+@import "mixins";
 @import "base";
 
 /* blocks */
+@import "blocks/_btn";
 @import "blocks/_container";
 @import "blocks/_main-header";
-@import "blocks/_btn";
+@import "blocks/_section-content";
+@import "blocks/_gym";

@@ -1,0 +1,12 @@
+@mixin bg-image($url, $bg-size) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: $bg-size;
+}
+
+@mixin retina {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @content;
+  }
+}

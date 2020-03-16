@@ -3,14 +3,21 @@
 
   color: white;
 
-  background-image: url("../img/header__bg@1x.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: $header-bg;
+
+  @include bg-image("../img/desktop/header__bg@1x.jpg", cover);
 }
 
+@include retina {
+  .main-header {
+    background-image: url("../img/desktop/header__bg@2x.jpg");
+  }
+}
+
+/* block: top-line */
 .main-header__top-line {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
 }
@@ -28,19 +35,18 @@
 
 .main-header__phone,
 .main-header__social-item {
-  transition: opacity 0.2s linear;
+  transition: opacity $animate;
 
-  &:hover {
-    opacity: 0.7;
-  }
-
-  &:active {
-    opacity: 0.3;
+  &:hover,
+  &:focus {
+    opacity: $for-hover;
+    outline: none;
   }
 }
 
 .main-header__phone {
-  font-family: "BebasNeue", "Arial", sans-serif;
+  margin-left: 100px;
+  font-family: $font-bebasneue;
   font-weight: 700;
   font-size: 26px;
   line-height: 1;
@@ -49,21 +55,26 @@
   color: white;
 }
 
+/* block: inner */
 .main-header__inner {
   margin-top: -4px;
   display: flex;
 }
 
+/* block: promo */
 .main-header__promo {
   align-self: flex-start;
+
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
   justify-content: space-between;
+
   width: 460px;
   padding-right: 63px;
   padding-top: 117px;
 
+  font-family: $font-bebasneue;
   text-align: right;
 }
 
@@ -72,7 +83,6 @@
   width: 100%;
   margin-bottom: 12px;
 
-  font-family: "BebasNeue", "Arial", sans-serif;
   font-weight: 400;
   font-size: 49px;
   line-height: 1;
@@ -81,7 +91,7 @@
   color: white;
 }
 
-.main-header__text-col {
+.main-header__text-wrapper {
   position: relative;
   margin-bottom: 57px;
 }
@@ -89,8 +99,8 @@
 .main-header__promo h1 {
   margin: 0;
   margin-left: 90px;
+  max-width: 307px;
 
-  font-family: "BebasNeue", "Arial", sans-serif;
   font-weight: 700;
   font-size: 109px;
   line-height: 1;
@@ -108,7 +118,7 @@
   left: 19px;
   top: 127px;
 
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: $font-roboto;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
@@ -116,9 +126,19 @@
   color: white;
 }
 
+/* block: photo */
 .main-header__photo {
   width: 500px;
   height: 556px;
+  background-color: #00092e;
+
+  @include bg-image("../img/desktop/sportsman@1x.jpg", cover);
+}
+
+@include retina {
+  .main-header__photo {
+    background-image: url("../img/desktop/sportsman@2x.jpg");
+  }
 }
 
 .main-header__photo img {
@@ -127,32 +147,46 @@
   height: auto;
 }
 
+/* block: social */
 .main-header__social {
   margin-top: auto;
   margin-left: auto;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 
   display: flex;
   flex-direction: column;
 }
 
 .main-header__social-item {
-  margin-top: 20px;
-  display: block;
+  margin-right: -4px;
+  margin-top: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  font-family: "Roboto", "Arial", sans-serif;
+  width: 20px;
+  height: 20px;
+
+  font-family: $font-roboto;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
-  text-align: right;
   text-transform: uppercase;
 
   color: white;
 }
 
-@media(max-width: $tablet-max) {
+@media (max-width: $tablet-max) {
   .main-header {
     padding: 40px 0 82px;
+
+    @include bg-image("../img/tablet/header__bg@1x.jpg", cover);
+  }
+
+  @include retina {
+    .main-header {
+      background-image: url("../img/tablet/header__bg@2x.jpg");
+    }
   }
 
   /* block: top-line */
@@ -167,24 +201,23 @@
 
   /* block: inner */
   .main-header__inner {
-    margin: 19px auto 0;
+    margin: 18px auto 0;
     max-width: 950px;
   }
 
   /* block: promo */
   .main-header__promo {
     margin: 0 auto;
-    padding-top: 56px;
-    padding-right: 30px;
+    padding: 55px 30px 0 0;
     max-width: 354px;
   }
 
-  .main-header__text-col {
+  .main-header__text-wrapper {
     margin-bottom: 41px;
   }
 
   .main-header__promo b {
-    margin-bottom: 3px;
+    margin-bottom: 5px;
     font-size: 34px;
   }
 
@@ -200,16 +233,23 @@
   /* block: photo */
   .main-header__photo {
     margin: 0 auto;
-    min-width: 324px;
+    width: 324px;
     height: 390px;
 
-    overflow: hidden;
+    background-image: url("../img/tablet/sportsman@1x.jpg");
+  }
+
+  @include retina {
+    .main-header__photo {
+      background-image: url("../img/tablet/sportsman@2x.jpg");
+    }
   }
 
   .main-header__photo img {
     margin: 0 auto;
     width: auto;
     height: 390px;
+    transform: translateX(-12px);
   }
 
   /* block: social */
@@ -218,9 +258,17 @@
   }
 }
 
-@media(max-width: $mobile-max) {
+@media (max-width: $mobile-max) {
   .main-header {
-    padding: 20px 0 80px;
+    padding: 20px 0 79px;
+
+    background-image: url("../img/mobile/header__bg-mobile@1x.jpg");
+  }
+
+  @include retina {
+    .main-header__photo {
+      background-image: url("../img/mobile/header__bg-mobile@2x.jpg");
+    }
   }
 
   /* block: top-line */
@@ -235,14 +283,14 @@
 
   /* block: promo */
   .main-header__promo {
-    padding-top: 53px;
-    padding-right: 0;
+    padding: 54px 0 0;
+
     width: 100%;
     max-width: 80%;
     min-width: 290px;
   }
 
-  .main-header__text-col {
+  .main-header__text-wrapper {
     margin-bottom: 44px;
   }
 
@@ -258,14 +306,8 @@
   }
 
   .main-header__promo p {
-    left: 0;
+    left: -1px;
     top: 81px;
-  }
-
-  .btn {
-    padding: 19px 30px;
-    width: 100%;
-    text-align: center;
   }
 
   /* block: photo */
