@@ -540,7 +540,6 @@ input[type="radio"].visually-hidden {
   left: 19px;
   top: 127px;
   font-family: "Roboto", "Arial", sans-serif;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
   color: white; }
@@ -591,8 +590,6 @@ input[type="radio"].visually-hidden {
           justify-content: center;
   width: 20px;
   height: 20px;
-  font-family: "Roboto", "Arial", sans-serif;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   text-transform: uppercase;
@@ -740,7 +737,6 @@ input[type="radio"].visually-hidden {
   margin-top: 9px;
   margin-bottom: 39px;
   display: block;
-  font-family: "Roboto", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5; }
@@ -749,7 +745,6 @@ input[type="radio"].visually-hidden {
   display: block;
   margin-top: 8px;
   margin-bottom: 0;
-  font-family: "Roboto", "Arial", sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5; }
