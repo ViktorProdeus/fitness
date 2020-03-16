@@ -15,5 +15,9 @@
 @media (max-width: $mobile-max) {
   .container {
     padding: 0 15px;
+
+    &--gym {
+      padding: 0;
+    }
   }
 }

@@ -2,8 +2,24 @@
   display: none;
 }
 
+.verticals-paddings {
+  padding: 120px 0;
+}
+
 @media (min-width: $desktop-min) {
   .hide-text {
     display: block;
+  }
+}
+
+@media (max-width: $tablet-max) {
+  .verticals-paddings {
+    padding: 100px 0;
+  }
+}
+
+@media (max-width: $mobile-max) {
+  .verticals-paddings {
+    padding: 70px 0;
   }
 }

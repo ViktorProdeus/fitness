@@ -1,8 +1,4 @@
-.section-content {
-  padding: 120px 0;
-}
-
-.section-content h2 {
+.main-content h2 {
   font-family: $font-bebasneue;
   font-weight: 700;
   font-size: 49px;
@@ -13,25 +9,13 @@
 }
 
 @media (max-width: $tablet-max) {
-  .section-content {
-    padding: 100px 0;
-  }
-
-  .section-content h2 {
+  .main-content h2 {
     font-size: 42px;
   }
 }
 
 @media (max-width: $mobile-max) {
-  .section-content {
-    padding: 70px 0;
-
-    .container {
-      padding: 0;
-    }
-  }
-
-  .section-content h2 {
+  .main-content h2 {
     font-size: 32px;
   }
 }

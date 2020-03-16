@@ -7,11 +7,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="Description" content="Фитнес центр">
   <title>Фитнес центр</title>
-  <link rel="preload" href="fonts/BebasNeue-Bold.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/BebasNeue-Regular.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/RobotoCondensed-light.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/BebasNeue-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/BebasNeue-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -43,11 +42,7 @@
           <a href="#membership" class="btn" aria-label="ссылка на блок абонементы">Купить абонемент</a>
         </div>
 
-        <div class="main-header__photo">
-          <!-- 1х: 500px*556px; 2x: 1000px*1112px-->
-          <!-- <img src="img/sportsman@1x.jpg" width="500" height="556"
-            srcset="img/sportsman@1x.jpg 1x, img/@2x/sportsman@2x.jpg 2x" alt="фото атлета"> -->
-        </div>
+        <div class="main-header__photo"></div>
 
         <div class="main-header__social">
           <a href="#" class="main-header__social-item" aria-label="мы в Фейсбук">Fb</a>
@@ -60,9 +55,9 @@
   </header>
 
   <main class="main-content">
-    <section class="section-content">
-      <div class="container">
-        <div class="gym">
+    <section class="gym verticals-paddings">
+      <div class="container container--gym">
+        <div class="gym__inner">
           <div class="gym__content">
             <h2>Тренажерный зал</h2>
             <b>Просторный зал площадью 900 кв/м</b>
@@ -83,16 +78,10 @@
           </div>
 
           <div class="gym__preview">
-            <div class="gym__photo">
-              <span class="visually-hidden">Фото тренажёрного зала</span>
-            </div>
+            <div class="gym__photo"></div>
 
             <div class="gym__video">
-              <span class="visually-hidden">постер видео тренажёрного зала</span>
-
               <button class="gym__video-btn" aria-label="нажать на элемент">
-                <span class="visually-hidden">Запустить видео</span>
-
                 <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M13 7.5L0.249999 14.8612L0.25 0.138783L13 7.5Z" fill="white" />
                 </svg>

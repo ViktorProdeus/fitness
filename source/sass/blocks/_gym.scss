@@ -1,4 +1,4 @@
-.gym {
+.gym__inner {
   display: flex;
 }
 
@@ -133,7 +133,7 @@
 }
 
 @media (max-width: $tablet-max) {
-  .gym {
+  .gym__inner {
     flex-wrap: wrap;
   }
 
@@ -219,6 +219,7 @@
   .gym__content {
     margin-bottom: 34px;
     padding: 0 15px;
+
     text-align: left;
   }
 
