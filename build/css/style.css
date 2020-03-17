@@ -319,8 +319,8 @@ template, [hidden] {
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url("../fonts/Roboto_Condensed-light.woff2") format("woff2");
-  src: url("../fonts/Roboto_Condensed-light.woff") format("woff"); }
+  src: url("../fonts/RobotoCondensedlight.woff2") format("woff2");
+  src: url("../fonts/RobotoCondensedlight.woff") format("woff"); }
 
 /* Color */
 /* gradient */
