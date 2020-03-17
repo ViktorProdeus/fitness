@@ -1,0 +1,217 @@
+.subscription {
+  background-color: #f8f9fc;
+}
+
+.subscription__wrapper {
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    position: absolute;
+    width: 435px;
+    height: 494px;
+
+    content: "";
+    right: 0;
+    bottom: 0;
+    margin-bottom: -270px;
+    margin-right: -230px;
+    z-index: -1;
+
+    background-image: url("../img/chips@1x.png");
+  }
+}
+
+.subscription h2 {
+  margin-top: -2px;
+}
+
+.subscription__data-list {
+  margin: 35px auto 38px;
+  padding: 0;
+
+  width: 340px;
+  list-style: none;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  border-bottom: 2px solid rgba(#787878, 0.2);
+}
+
+.subscription__data-item {
+  position: relative;
+  padding-bottom: 11px;
+
+  &::after {
+    width: 0;
+    height: 2px;
+
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -2px;
+    z-index: 1;
+    background-color: transparent;
+  }
+
+  &--active::after {
+    width: 100%;
+
+    background-color: $tab-active;
+  }
+}
+
+.subscription__data-link {
+  font-family: $font-roboto;
+  font-size: 20px;
+  line-height: 1.5;
+
+  color: $text-color-disabled;
+  transition: color $animate;
+
+  &--active {
+    color: $text-color;
+  }
+
+  &:hover,
+  &:focus {
+    color: $text-color;
+    outline: none;
+  }
+}
+
+.subscription__list {
+  margin: 0 -20px;
+  padding: 0;
+  list-style: none;
+  display: none;
+
+  &--active {
+    display: flex;
+  }
+}
+
+.subscription__item {
+  width: 400px;
+  padding: 0 20px;
+}
+
+.subscription__item-inner {
+  position: relative;
+  margin: 0 auto;
+  padding: 56px 69px 60px;
+
+  text-align: center;
+  background-color: white;
+
+  border-width: 7px;
+  border-style: solid;
+  border-color: transparent;
+  z-index: 1;
+
+  &::before {
+    position: absolute;
+    width: calc(100% + 14px);
+    height: calc(100% + 14px);
+
+    content: "";
+    top: 0;
+    left: 0;
+    transform: translate(-7px, -7px);
+    z-index: -1;
+
+    border-style: solid;
+    border-width: 7px;
+    border-image: linear-gradient(135deg, #d10a42 0%, #00359f 100%);
+    border-image-slice: 1;
+    opacity: 0;
+    transition: opacity $animate;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    opacity: 1;
+  }
+}
+
+.subscription__item-inner:hover .subscription__btn,
+.subscription__item-inner:focus .subscription__btn {
+  padding: 26px 15px;
+  color: white;
+  border: none;
+  background-image: linear-gradient(to right, #ed0233 0%, #003eb7 100%);
+}
+
+.subscription__content {
+  margin-bottom: 65px;
+}
+
+.subscription__item-inner h3,
+.subscription__item-inner p {
+  margin: 0;
+}
+
+.subscription__item-inner h3 {
+  margin-bottom: 9px;
+
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.12;
+}
+
+.subscription__item-inner p {
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: #495a7d;
+}
+
+.subscription__price {
+  margin-bottom: 35px;
+}
+
+.subscription__price p {
+  position: relative;
+  z-index: 1;
+
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.5;
+  word-wrap: break-word;
+
+  color: $price-color;
+
+  &::before {
+    width: 208px;
+
+    content: attr(data-price);
+    position: absolute;
+    font-size: 100px;
+    line-height: 1.5;
+    left: 0;
+    top: -56px;
+    color: #e8e8e8;
+    z-index: -1;
+    opacity: 0.48;
+    word-wrap: break-word;
+  }
+}
+
+.subscription__price span {
+  margin-left: 10px;
+  font-weight: 700;
+
+  color: $currency-color;
+}
+
+.subscription__btn {
+  padding: 24px 15px;
+  width: 208px;
+
+  color: $text-color;
+  border-color: $border-price-btn-color;
+  border-width: 2px;
+  opacity: 1;
+}

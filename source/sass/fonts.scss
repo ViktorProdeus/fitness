@@ -21,8 +21,8 @@
   }
 }
 
-@include font("BebasNeue", normal, 700, "../fonts/BebasNeue-Bold", swap);
-@include font("BebasNeue", normal, 400, "../fonts/BebasNeue-Regular", swap);
-@include font("Roboto", normal, 700, "../fonts/RobotoCondensed-Bold", swap);
-@include font("Roboto", normal, 400, "../fonts/RobotoCondensed-Regular", swap);
-@include font("Roboto", normal, 300, "../fonts/RobotoCondensed-light", swap);
+@include font("BebasNeue", normal, 700, "../fonts/BebasNeueBold", swap);
+@include font("BebasNeue", normal, 400, "../fonts/BebasNeueRegular", swap);
+@include font("Roboto", normal, 700, "../fonts/Roboto_Condensed_Bold", swap);
+@include font("Roboto", normal, 400, "../fonts/Roboto_Condensed", swap);
+@include font("Roboto", normal, 300, "../fonts/Roboto_Condensed-light", swap);

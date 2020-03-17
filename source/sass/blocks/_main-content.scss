@@ -1,4 +1,10 @@
+.main-content {
+  overflow: hidden;
+}
+
 .main-content h2 {
+  margin: 0;
+
   font-family: $font-bebasneue;
   font-weight: 700;
   font-size: 49px;
