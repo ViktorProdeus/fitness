@@ -23,6 +23,6 @@
 
 @include font("BebasNeue", normal, 700, "../fonts/BebasNeueBold", swap);
 @include font("BebasNeue", normal, 400, "../fonts/BebasNeueRegular", swap);
-@include font("Roboto", normal, 700, "../fonts/Roboto_Condensed_Bold", swap);
-@include font("Roboto", normal, 400, "../fonts/Roboto_Condensed", swap);
-@include font("Opensans", normal, 300, "../fonts/Opensans-light", swap);
+@include font("Robotocondensed", normal, 700, "../fonts/robotocondensed-bold-webfont", swap);
+@include font("Robotocondensed", normal, 400, "../fonts/robotocondensed-regular-webfont", swap);
+@include font("Robotocondensed", normal, 300, "../fonts/robotocondensed-light-webfont", swap);
