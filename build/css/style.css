@@ -989,34 +989,39 @@ input[type="radio"].visually-hidden {
   border-bottom: 2px solid rgba(120, 120, 120, 0.2); }
 
 .subscription__data-item {
-  position: relative;
   padding-bottom: 11px; }
-  .subscription__data-item::after {
-    width: 0;
-    height: 2px;
-    position: absolute;
-    content: "";
-    left: 0;
-    bottom: -2px;
-    z-index: 1;
-    background-color: transparent; }
-  .subscription__data-item--active::after {
-    width: 100%;
-    background-color: #d10a42; }
 
 .subscription__data-link {
+  position: relative;
+  padding-bottom: 14px;
   font-family: "Robotocondensed", "Arial", sans-serif;
   font-size: 20px;
   line-height: 1.5;
   color: rgba(16, 38, 84, 0.5);
   -webkit-transition: color 0.2s linear;
   transition: color 0.2s linear; }
+  .subscription__data-link::after {
+    width: 0;
+    height: 2px;
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: #d10a42;
+    opacity: 0;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear; }
   .subscription__data-link--active {
     color: #102654; }
+    .subscription__data-link--active::after {
+      width: 100%;
+      opacity: 1; }
   .subscription__data-link:hover, .subscription__data-link:focus {
     color: #102654;
     outline: none; }
 
+/* fadeIn animated */
 .subscription__list {
   margin: 0 auto;
   padding: 0;
@@ -1030,7 +1035,15 @@ input[type="radio"].visually-hidden {
   .subscription__list--active {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-transition: all 1.9s 0.2s linear;
+    transition: all 1.9s 0.2s linear; }
 
 .subscription__item {
   position: relative;
@@ -1197,3 +1210,15 @@ input[type="radio"].visually-hidden {
               transform: translate(-19px, -46px); }
   .subscription__wrapper::after {
     display: none; } }
+
+/* animate css */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
