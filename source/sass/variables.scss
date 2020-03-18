@@ -3,6 +3,7 @@ $accent-color: #ed0233;
 $tab-active: #d10a42;
 $header-bg: #af032b;
 $price-color: #103aae;
+$time-color: #495a7d;
 $text-color: #102654;
 $text-color-disabled: rgba(#102654, 0.5);
 $block-bg: #1c3374;
@@ -11,12 +12,14 @@ $light-overlay: rgba(20, 54, 122, 0.5);
 $dark-overlay: rgba(16, 38, 84, 0.89);
 $light-bg: #f8f9fc;
 $currency-color: #102654;
-$border-price-btn-color: #102654;
+$border-price-btn: #102654;
 $footer-bg: #030a1a;
 $blue-overlay: rgba(20, 54, 122, 0.5);
 
 /* gradient */
-$linear-button: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
+$linear-button: linear-gradient(to right, #ed0233 0%, #003eb7 100%);
+$linear-button-video: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
+$linear-border: linear-gradient(135deg, #d10a42 0%, #00359f 100%);
 
 /* fonts */
 $font-roboto: "Robotocondensed", "Arial", sans-serif;

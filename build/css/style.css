@@ -957,10 +957,17 @@ input[type="radio"].visually-hidden {
     content: "";
     right: 0;
     bottom: 0;
-    margin-bottom: -270px;
+    margin-bottom: -230px;
     margin-right: -230px;
     z-index: -1;
-    background-image: url("../img/chips@1x.png"); }
+    background-image: url("../img/desktop/chips@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; }
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .subscription__wrapper::after {
+    background-image: url("../img/desktop/chips@2x.png"); } }
 
 .subscription h2 {
   margin-top: -2px; }
@@ -1011,38 +1018,48 @@ input[type="radio"].visually-hidden {
     outline: none; }
 
 .subscription__list {
-  margin: 0 -20px;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
-  display: none; }
+  display: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
   .subscription__list--active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
 
 .subscription__item {
-  width: 400px;
-  padding: 0 20px; }
-
-.subscription__item-inner {
   position: relative;
-  margin: 0 auto;
-  padding: 56px 69px 60px;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 40px 40px 0;
+  padding: 62px 30px 67px;
+  width: 360px;
+  min-height: 448px;
   text-align: center;
-  background-color: white;
-  border-width: 7px;
-  border-style: solid;
-  border-color: transparent;
-  z-index: 1; }
-  .subscription__item-inner::before {
-    position: absolute;
-    width: calc(100% + 14px);
-    height: calc(100% + 14px);
+  background-color: white; }
+  .subscription__item:nth-child(3n) {
+    margin-right: 0; }
+  .subscription__item::before {
+    width: 100%;
+    height: 100%;
     content: "";
+    position: absolute;
     top: 0;
     left: 0;
-    -webkit-transform: translate(-7px, -7px);
-            transform: translate(-7px, -7px);
     z-index: -1;
     border-style: solid;
     border-width: 7px;
@@ -1052,68 +1069,131 @@ input[type="radio"].visually-hidden {
     opacity: 0;
     -webkit-transition: opacity 0.2s linear;
     transition: opacity 0.2s linear; }
-  .subscription__item-inner:hover::before, .subscription__item-inner:focus::before {
+  .subscription__item:hover::before, .subscription__item:focus::before {
     opacity: 1; }
 
-.subscription__item-inner:hover .subscription__btn,
-.subscription__item-inner:focus .subscription__btn {
-  padding: 26px 15px;
+.subscription__item:hover .subscription__btn,
+.subscription__item:focus .subscription__btn {
+  padding: 24px 20px 26px;
   color: white;
   border: none;
   background-image: -webkit-gradient(linear, left top, right top, from(#ed0233), to(#003eb7));
   background-image: linear-gradient(to right, #ed0233 0%, #003eb7 100%); }
 
-.subscription__content {
-  margin-bottom: 65px; }
-
-.subscription__item-inner h3,
-.subscription__item-inner p {
-  margin: 0; }
-
-.subscription__item-inner h3 {
-  margin-bottom: 9px;
+.subscription__item h3 {
+  margin: 0 0 10px;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.12; }
 
-.subscription__item-inner p {
+.subscription__item p {
+  margin: 0;
   font-size: 16px;
   line-height: 1.5;
   color: #495a7d; }
 
+.subscription__content {
+  margin-bottom: 65px; }
+
 .subscription__price {
-  margin-bottom: 35px; }
+  margin-bottom: 36px; }
 
 .subscription__price p {
   position: relative;
   z-index: 1;
+  max-width: 280px;
   font-weight: 700;
   font-size: 60px;
   line-height: 1.5;
   word-wrap: break-word;
   color: #103aae; }
   .subscription__price p::before {
-    width: 208px;
     content: attr(data-price);
     position: absolute;
     font-size: 100px;
     line-height: 1.5;
     left: 0;
-    top: -56px;
-    color: #e8e8e8;
+    top: 0;
+    -webkit-transform: translate(-19px, -56px);
+            transform: translate(-19px, -56px);
     z-index: -1;
-    opacity: 0.48;
-    word-wrap: break-word; }
+    color: #e8e8e8;
+    opacity: 0.48; }
 
 .subscription__price span {
-  margin-left: 10px;
+  margin-left: 12px;
   font-weight: 700;
   color: #102654; }
 
 .subscription__btn {
-  padding: 24px 15px;
-  width: 208px;
+  margin-top: auto;
+  padding: 24px 20px;
+  max-width: 208px;
   color: #102654;
   border-color: #102654;
-  border-width: 2px;
-  opacity: 1; }
+  border-width: 2px; }
+
+@media (max-width: 1199px) {
+  .subscription h2 {
+    margin-top: 0; }
+  .subscription__data-list {
+    margin: 29px auto 44px;
+    padding: 0;
+    width: 333px; }
+  .subscription__list {
+    max-width: 450px; }
+  .subscription__data-item {
+    padding-bottom: 13px; }
+  .subscription__data-link {
+    font-size: 18px; }
+  .subscription__item {
+    margin: 0 auto 40px;
+    width: 442px; }
+    .subscription__item:nth-child(3n) {
+      margin-right: auto; }
+  .subscription__btn {
+    max-width: 208px;
+    width: 100%; }
+  .subscription__wrapper::after {
+    width: 354px;
+    height: 311px;
+    margin-bottom: -114px;
+    margin-right: -37px;
+    background-image: url("../img/tablet/chips@1x.png"); } }
+
+@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
+  .subscription__wrapper::after {
+    background-image: url("../img/tablet/chips@2x.png"); } }
+
+@media (max-width: 767px) {
+  .subscription h2 {
+    margin-top: -1px; }
+  .subscription__data-list {
+    width: 290px;
+    margin: 21px auto 33px; }
+  .subscription__data-item {
+    padding-bottom: 13px;
+    padding-right: 7px; }
+    .subscription__data-item:last-child {
+      padding-right: 0; }
+  .subscription__data-link {
+    font-size: 16px; }
+  .subscription__item {
+    margin-bottom: 35px;
+    padding: 51px 30px 52px;
+    min-height: 384px; }
+  .subscription__content {
+    margin-bottom: 54px; }
+  .subscription__item h3 {
+    font-size: 22px; }
+  .subscription__price {
+    margin-bottom: 30px;
+    margin-left: 10px; }
+  .subscription__price p {
+    font-size: 48px; }
+    .subscription__price p::before {
+      font-size: 80px;
+      -webkit-transform: translate(-19px, -46px);
+              transform: translate(-19px, -46px); }
+  .subscription__wrapper::after {
+    display: none; } }
