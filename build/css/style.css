@@ -550,7 +550,7 @@ input[type="radio"].visually-hidden {
 
 .main-header__promo p {
   margin: 0;
-  max-width: 113px;
+  max-width: 114px;
   position: absolute;
   left: 19px;
   top: 128px;
@@ -705,7 +705,7 @@ input[type="radio"].visually-hidden {
     max-width: 340px;
     font-size: 78px; }
   .main-header__promo p {
-    left: -1px;
+    left: -2px;
     top: 81px; }
   /* block: photo */
   .main-header__photo {
