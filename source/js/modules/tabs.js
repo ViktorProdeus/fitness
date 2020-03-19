@@ -7,20 +7,26 @@
   var lists = document.querySelectorAll('.subscription__list');
   var activeClass = 'subscription__list--active';
 
-  tabs.forEach(function (tab, item) {
+  var removeClass = function (elem, className) {
+    Array.prototype.forEach.call(elem, function (i) {
+      i.classList.remove(className);
+    });
+  };
+
+  Array.prototype.forEach.call(tabs, function (tab, i) {
     tab.addEventListener('click', function (evt) {
       evt.preventDefault();
 
-      tabs.forEach(function (tab) {
-        tab.classList.remove(activeTab);
-      });
+      if (tabs) {
+        removeClass(tabs, activeTab);
+        tab.classList.add(activeTab);
+      }
 
-      tab.classList.add(activeTab);
-
-      lists.forEach(function (list) {
-        list.classList.remove(activeClass);
-      });
-      lists[item].classList.add(activeClass);
+      if (lists) {
+        removeClass(lists, activeClass);
+        lists[i].classList.add(activeClass);
+      }
     });
   });
+
 })();

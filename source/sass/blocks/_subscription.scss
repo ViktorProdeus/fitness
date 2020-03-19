@@ -33,7 +33,7 @@
 }
 
 .subscription__data-list {
-  margin: 35px auto 38px;
+  margin: 34px auto 36px;
   padding: 0;
 
   width: 340px;
@@ -41,18 +41,25 @@
 
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 
   border-bottom: 2px solid rgba(#787878, 0.2);
 }
 
 .subscription__data-item {
-  padding-bottom: 11px;
+  margin-left: 46px;
+
+  &:nth-child(3n-2) {
+    width: 67px;
+    margin-left: 0;
+  }
 }
 
 .subscription__data-link {
+  display: block;
   position: relative;
-  padding-bottom: 14px;
+  padding-bottom: 13px;
 
   font-family: $font-roboto;
   font-size: 20px;
@@ -63,6 +70,7 @@
 
   &::after {
     width: 0;
+    max-width: 100%;
     height: 2px;
 
     position: absolute;
@@ -206,9 +214,9 @@
     position: absolute;
     font-size: 100px;
     line-height: 1.5;
-    left: 0;
-    top: 0;
-    transform: translate(-19px, -56px);
+    left: 50%;
+    top: 24%;
+    transform: translate(-50%, -50%);
     z-index: -1;
 
     color: #e8e8e8;
@@ -240,7 +248,7 @@
   }
 
   .subscription__data-list {
-    margin: 29px auto 44px;
+    margin: 29px auto 42px;
     padding: 0;
     width: 333px;
   }
@@ -250,10 +258,15 @@
   }
 
   .subscription__data-item {
-    padding-bottom: 13px;
+    margin-left: 55px;
+
+    &:nth-child(3n-2) {
+      width: 60px;
+    }
   }
 
   .subscription__data-link {
+    padding-bottom: 14px;
     font-size: 18px;
   }
 
@@ -262,7 +275,7 @@
     width: 442px;
 
     &:nth-child(3n) {
-      margin-right: auto;
+      margin-right: 0;
     }
   }
 
@@ -298,16 +311,20 @@
   }
 
   .subscription__data-item {
-    padding-bottom: 13px;
-    padding-right: 7px;
+    margin-left: 45px;
 
-    &:last-child {
-      padding-right: 0;
+    &:nth-child(3n-2) {
+      margin-right: -7px;
     }
   }
 
   .subscription__data-link {
     font-size: 16px;
+    padding-bottom: 13px;
+
+    &::after {
+      bottom: -2px;
+    }
   }
 
   .subscription__item {
@@ -334,7 +351,6 @@
 
     &::before {
       font-size: 80px;
-      transform: translate(-19px, -46px);
     }
   }
 
