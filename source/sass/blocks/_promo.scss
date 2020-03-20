@@ -1,0 +1,231 @@
+.promo__wrapper {
+  display: flex;
+}
+
+.promo__content {
+  padding: 85px 77px;
+  width: 500px;
+
+  color: white;
+
+  background-color: $accent-color;
+}
+
+.promo__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  margin-bottom: 8px;
+}
+
+.promo__header h3 {
+  margin: 0 50px 0 0;
+  width: 201px;
+
+  font-family: $font-bebasneue;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+}
+
+.promo__date {
+  margin: 0;
+  width: 92px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.promo__date dt {
+  margin-top: -5px;
+  padding-bottom: 5px;
+  width: 64px;
+
+  font-family: $font-roboto;
+  font-size: 18px;
+
+  border-bottom: 1px solid white;
+}
+
+.promo__date .promo__date-header {
+  margin-right: 3px;
+  width: 100%;
+}
+
+.promo__date dd {
+  margin: 0 0 14px;
+
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.promo__date .promo__date-time {
+  margin: -7px 0 0;
+  width: 100%;
+}
+
+.promo__date-content span {
+  margin: -6px 7px 0 0;
+  width: 20px;
+}
+
+.promo__date-content p {
+  margin: 5px 0 0;
+  width: 37px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.promo__content b {
+  display: block;
+  margin: 0 0 45px;
+
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.promo__btn {
+  width: 100%;
+  padding: 24px;
+}
+
+.promo__img {
+  height: 500px;
+  width: 660px;
+
+  background-color: $promo-bg;
+
+  @include bg-image("../img/desktop/swimmer@1x.jpg", cover);
+}
+
+@include retina {
+  .main-header__photo {
+    background-image: url("../img/desktop/swimmer@2x.jpg");
+  }
+}
+
+@media (max-width: $tablet-max) {
+  .promo {
+    margin-top: -1px;
+  }
+
+  .promo__wrapper {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .promo__content {
+    padding: 47px 44px 50px;
+    width: 292px;
+  }
+
+  .promo__header {
+    margin-bottom: 1px;
+  }
+
+  .promo__header h3 {
+    margin: 0 29px 0 0;
+    width: 118px;
+    font-size: 52px;
+  }
+
+  .promo__date {
+    width: 56px;
+  }
+
+  .promo__date dt {
+    margin-top: -2px;
+    padding-bottom: 3px;
+    width: 42px;
+    font-size: 12px;
+  }
+
+  .promo__date .promo__date-time {
+    margin: -5px 0 0;
+  }
+
+  .promo__date .promo__date-header {
+    margin-right: 0;
+    padding-bottom: 2px;
+  }
+
+  .promo__date dd {
+    font-size: 24px;
+    margin-bottom: 2px;
+  }
+
+  .promo__date-content span {
+    margin: -4px 3px 0 0;
+    width: 13px;
+  }
+
+  .promo__date-content p {
+    margin-top: 1px;
+    width: 26px;
+
+    font-size: 10px;
+  }
+
+  .promo__content b {
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
+
+  .promo__btn {
+    padding: 13px 15px;
+    font-size: 10px;
+    border-width: 2px;
+  }
+
+  .promo__img {
+    width: 386px;
+    height: 292px;
+
+    background-image: url("../img/tablet/swimmer@1x.jpg");
+  }
+
+  @include retina {
+    .main-header__photo {
+      background-image: url("../img/tablet/swimmer@2x.jpg");
+    }
+  }
+}
+
+@media (max-width: $mobile-max) {
+  .promo {
+    margin-top: 1px;
+  }
+
+  .promo__wrapper {
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 300px;
+  }
+
+  .promo__header h3 {
+    margin-right: 28px;
+  }
+
+  .promo__img {
+    width: 290px;
+    height: 292px;
+
+    background-image: url("../img/mobile/swimmer@1x.jpg");
+  }
+
+  @include retina {
+    .main-header__photo {
+      background-image: url("../img/mobile/swimmer@2x.jpg");
+    }
+  }
+}
