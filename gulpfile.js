@@ -41,9 +41,7 @@ gulp.task("main", function () {
     .pipe(concat("main.js"))
     .pipe(gulp.dest("build/js"))
     .pipe(uglify())
-    .pipe(rename({
-      suffix: '.min'
-    }))
+    .pipe(rename("main.min.js"))
     // .pipe(sourcemaps.write("."))
     .pipe(gulp.dest("build/js"));
 });
@@ -55,9 +53,7 @@ gulp.task("vendor", function () {
     .pipe(concat("vendor.js"))
     .pipe(gulp.dest("build/js"))
     .pipe(uglify())
-    .pipe(rename({
-      suffix: '.min'
-    }))
+    .pipe(rename("vendor.min.js"))
     // .pipe(sourcemaps.write("."))
     .pipe(gulp.dest("build/js"));
 });
