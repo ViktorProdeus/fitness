@@ -1,9 +1,15 @@
 @import "normalize";
+
+/* vendor */
+@import "vendor/_swiper";
+
+/* base */
 @import "fonts";
 @import "variables";
 @import "helpers";
 @import "mixins";
 @import "base";
+
 
 /* blocks */
 @import "blocks/_btn";
@@ -13,3 +19,4 @@
 @import "blocks/_gym";
 @import "blocks/_subscription";
 @import "blocks/_promo";
+@import "blocks/_coaches";
