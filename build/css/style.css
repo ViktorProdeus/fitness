@@ -1003,8 +1003,8 @@ input[type="radio"].visually-hidden {
 .container {
   width: 100%;
   min-width: 320px;
-  max-width: 1200px;
-  padding: 0 20px;
+  max-width: 1220px;
+  padding: 0 30px;
   margin: 0 auto; }
 
 @media (max-width: 1199px) {
@@ -1539,7 +1539,7 @@ input[type="radio"].visually-hidden {
     right: 0;
     bottom: 0;
     margin-bottom: -270px;
-    margin-right: -230px;
+    margin-right: -222px;
     z-index: -1;
     background-image: url("../img/desktop/chips@1x.png");
     background-repeat: no-repeat;
@@ -1700,6 +1700,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 36px; }
 
 .subscription__price p {
+  padding-right: 44px;
   position: relative;
   z-index: 1;
   max-width: 280px;
@@ -1720,6 +1721,16 @@ input[type="radio"].visually-hidden {
     z-index: -1;
     color: #e8e8e8;
     opacity: 0.48; }
+  .subscription__price p::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 42px;
+    top: 50%;
+    -webkit-transform: translateY(-46%);
+            transform: translateY(-46%);
+    right: 0;
+    background-image: url("../img/svg/ruble.svg"); }
 
 .subscription__price span {
   margin-left: 12px;
@@ -1800,7 +1811,15 @@ input[type="radio"].visually-hidden {
   .subscription__price p {
     font-size: 48px; }
     .subscription__price p::before {
-      font-size: 80px; }
+      font-size: 80px;
+      left: 46%;
+      top: 19%; }
+    .subscription__price p::after {
+      width: 24px;
+      background-repeat: no-repeat;
+      background-size: 24px 33px;
+      -webkit-transform: translate(-8px, -16px);
+              transform: translate(-8px, -16px); }
   .subscription__wrapper::after {
     display: none; } }
 
@@ -2013,7 +2032,7 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/mobile/swimmer@2x.jpg"); } }
 
 .coaches {
-  margin-bottom: 100px; }
+  margin-bottom: 120px; }
 
 .coaches h2 {
   margin: -2px 0 52px 1px;
@@ -2022,6 +2041,7 @@ input[type="radio"].visually-hidden {
 .coaches__slider {
   position: relative;
   max-width: 1270px;
+  padding: 0 30px;
   width: 100%;
   margin: 0 auto; }
 
@@ -2030,7 +2050,13 @@ input[type="radio"].visually-hidden {
   max-width: 1160px;
   height: 294px; }
 
+.coaches__gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
 .coaches__slide {
+  height: 294px;
   position: relative;
   margin: 0;
   padding: 0;
@@ -2083,6 +2109,7 @@ input[type="radio"].visually-hidden {
   color: #b6bdcc; }
 
 .coaches__info {
+  list-style-type: disc;
   margin: 0;
   font-size: 14px;
   font-weight: 400;
@@ -2108,7 +2135,7 @@ input[type="radio"].visually-hidden {
     left: -8px;
     background-image: url("../img/svg/prev.svg"); }
   .coaches__button--next {
-    right: -6px;
+    right: -4px;
     background-image: url("../img/svg/next.svg");
     -webkit-transform: translateX(2px);
             transform: translateX(2px); }
@@ -2135,6 +2162,10 @@ input[type="radio"].visually-hidden {
     text-align: center; }
   .coaches__slider {
     max-width: 290px; }
+  .coaches__slide {
+    height: 274px; }
+  .coaches__slide img {
+    width: 105%; }
   .coaches__wrapper {
     max-width: 226px;
     height: 274px; }
@@ -2154,3 +2185,135 @@ input[type="radio"].visually-hidden {
     height: 19px;
     top: 53%;
     background-size: 10px 19px; } }
+
+.advantages {
+  background-color: #f8f9fc;
+  padding-bottom: 113px; }
+
+.advantages__wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1040px;
+  width: 100%;
+  margin: 69px auto 0; }
+
+.advantages__block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .advantages__block h3 {
+    margin: -8px 0 5px;
+    font-weight: 700;
+    font-size: 22px; }
+  .advantages__block p {
+    margin: 0;
+    font-weight: 300; }
+
+.advantages__item {
+  width: 340px;
+  position: relative;
+  margin-bottom: 81px;
+  padding-bottom: 75px; }
+  .advantages__item::before {
+    position: absolute;
+    content: "";
+    top: -3px;
+    left: 4px;
+    min-width: 65px;
+    width: 100%;
+    max-width: 103px;
+    height: 53px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    z-index: 1; }
+  .advantages__item--square, .advantages__item--comfort {
+    padding-left: 157px; }
+  .advantages__item--parking, .advantages__item--experience {
+    padding-right: 5px;
+    padding-left: 102px; }
+
+.advantages__info {
+  position: absolute;
+  top: 56px;
+  left: 27px;
+  z-index: 1;
+  font-size: 14px;
+  color: #2e35ac; }
+
+.advantages__block--top {
+  width: 100%; }
+  .advantages__block--top .advantages__item {
+    border-bottom: 2px solid rgba(209, 10, 66, 0.2); }
+
+.advantages__block--center {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 1;
+  padding: 59px 34px 58px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: 240px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: white;
+  background-color: #1c3374; }
+  .advantages__block--center .advantages__content {
+    padding: 0; }
+  .advantages__block--center b {
+    display: block;
+    margin: -8px 0 13px;
+    font-weight: 700;
+    font-size: 74px;
+    line-height: 1;
+    -webkit-transform: translateX(-4px);
+            transform: translateX(-4px); }
+  .advantages__block--center h3 {
+    font-size: 26px;
+    margin-bottom: 32px; }
+
+.advantages__item--square::before {
+  left: 30px;
+  background-image: url("../img/desktop/900.png"); }
+
+.advantages__item--square .advantages__content {
+  margin-left: 7px; }
+
+.advantages__item--comfort::before {
+  left: 22px;
+  background-image: url("../img/desktop/350.png"); }
+
+.advantages__item--comfort .advantages__info {
+  left: 19px; }
+
+.advantages__item--parking::before {
+  background-image: url("../img/desktop/70.png"); }
+
+.advantages__item--parking .advantages__info {
+  left: 0; }
+
+.advantages__item--experience::before {
+  background-image: url("../img/desktop/5+.png"); }
+
+.advantages__item--experience .advantages__info {
+  left: 0; }

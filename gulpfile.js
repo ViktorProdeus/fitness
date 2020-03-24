@@ -43,7 +43,7 @@ gulp.task("main", function () {
     .pipe(uglify())
     .pipe(rename("main.min.js"))
     // .pipe(sourcemaps.write("."))
-    .pipe(gulp.dest("build/js"));
+    .pipe(gulp.dest("build/js/"));
 });
 
 gulp.task("vendor", function () {
@@ -55,7 +55,7 @@ gulp.task("vendor", function () {
     .pipe(uglify())
     .pipe(rename("vendor.min.js"))
     // .pipe(sourcemaps.write("."))
-    .pipe(gulp.dest("build/js"));
+    .pipe(gulp.dest("build/js/"));
 });
 
 

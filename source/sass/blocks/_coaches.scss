@@ -1,5 +1,5 @@
 .coaches {
-  margin-bottom: 100px;
+  margin-bottom: 120px;
 }
 
 .coaches h2 {
@@ -11,6 +11,7 @@
   position: relative;
 
   max-width: 1270px;
+  padding: 0 30px;
   width: 100%;
   margin: 0 auto;
 }
@@ -21,7 +22,14 @@
   height: 294px;
 }
 
+.coaches__gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .coaches__slide {
+  height: 294px;
   position: relative;
 
   margin: 0;
@@ -88,6 +96,7 @@
 }
 
 .coaches__info {
+  list-style-type: disc;
   margin: 0;
   font-size: 14px;
   font-weight: 400;
@@ -121,7 +130,7 @@
   }
 
   &--next {
-    right: -6px;
+    right: -4px;
     background-image: url("../img/svg/next.svg");
     transform: translateX(2px);
   }
@@ -159,6 +168,14 @@
 
   .coaches__slider {
     max-width: 290px;
+  }
+
+  .coaches__slide {
+    height: 274px;
+  }
+
+  .coaches__slide img {
+    width: 105%;
   }
 
   .coaches__wrapper {

@@ -15,7 +15,7 @@
     right: 0;
     bottom: 0;
     margin-bottom: -270px;
-    margin-right: -230px;
+    margin-right: -222px;
     z-index: -1;
 
     @include bg-image("../img/desktop/chips@1x.png", contain);
@@ -198,6 +198,7 @@
 }
 
 .subscription__price p {
+  padding-right: 44px;
   position: relative;
   z-index: 1;
   max-width: 280px;
@@ -221,6 +222,17 @@
 
     color: #e8e8e8;
     opacity: 0.48;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 42px;
+    top: 50%;
+    transform: translateY(-46%);
+    right: 0;
+    background-image: url("../img/svg/ruble.svg");
   }
 }
 
@@ -355,6 +367,15 @@
 
     &::before {
       font-size: 80px;
+      left: 46%;
+      top: 19%;
+    }
+
+    &::after {
+      width: 24px;
+      background-repeat: no-repeat;
+      background-size: 24px 33px;
+      transform: translate(-8px, -16px);
     }
   }
 
