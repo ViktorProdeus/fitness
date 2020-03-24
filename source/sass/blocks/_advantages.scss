@@ -144,6 +144,9 @@
 }
 
 .advantages__item--comfort {
+  padding-bottom: 0;
+  margin-bottom: 0;
+
   &::before {
     left: 22px;
     background-image: url("../img/desktop/350.png");
@@ -165,11 +168,122 @@
 }
 
 .advantages__item--experience {
+  margin-bottom: 0;
+  padding-bottom: 0;
+
   &::before {
     background-image: url("../img/desktop/5+.png");
   }
 
   .advantages__info {
     left: 0;
+  }
+}
+
+@media (max-width: $tablet-max) {
+  .advantages {
+    padding-bottom: 92px;
+  }
+
+  .advantages__wrapper {
+    max-width: 100%;
+    padding: 0 45px;
+  }
+
+  .advantages__block--top {
+    .advantages__item {
+      border-bottom: none;
+    }
+  }
+
+  .advantages__item {
+    width: 339px;
+    margin-bottom: 42px;
+    padding-bottom: 0;
+
+    &::before {
+      top: -19px;
+      width: 100%;
+      max-width: 85px;
+      height: 43px;
+
+      background-size: 85px 43px;
+    }
+
+    &--square,
+    &--comfort {
+      padding-left: 111px;
+      padding-right: 35px;
+    }
+
+    &--experience,
+    &--comfort {
+      margin-bottom: 0;
+    }
+  }
+
+  .advantages__info {
+    top: 27px;
+    left: 0;
+  }
+
+  .advantages__block h3 {
+    margin: -27px 0 1px;
+    font-size: 20px;
+  }
+
+  .advantages__item--square {
+    &::before {
+      left: 1px;
+    }
+  }
+
+  .advantages__item--experience,
+  .advantages__item--parking {
+    .advantages__info {
+      left: 15px;
+    }
+
+    &::before {
+      background-size: 57px 43px;
+      width: 57px;
+      height: 43px;
+      left: 15px;
+    }
+  }
+
+  .advantages__item--comfort {
+    padding-left: 117px;
+
+    .advantages__info {
+      left: 0;
+    }
+
+    &::before {
+      left: 2px;
+    }
+  }
+
+  .advantages__block--center {
+    padding: 39px 130px 38px;
+    margin: 0 auto;
+
+    position: static;
+    transform: none;
+    display: flex;
+    width: 442px;
+
+    b {
+      margin-bottom: 26px;
+    }
+
+    h3 {
+      font-size: 22px;
+      margin-bottom: 16px;
+    }
+  }
+
+  .advantages__block--bottom {
+    margin-top: 68px;
   }
 }

@@ -137,6 +137,10 @@
 }
 
 @media (max-width: $tablet-max) {
+  .coaches {
+    margin-bottom: 100px;
+  }
+
   .coaches h2 {
     margin-bottom: 42px;
     text-align: center;
