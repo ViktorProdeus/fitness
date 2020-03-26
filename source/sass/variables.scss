@@ -8,14 +8,13 @@ $time-color: #495a7d;
 $text-color: #102654;
 $text-color-disabled: rgba($text-color, 0.5);
 $blue-bg: #1c3374;
+$promotion-text-color: $blue-bg;
 $form-bg: $text-color;
-$light-overlay: rgba(20, 54, 122, 0.5);
-$dark-overlay: rgba($text-color, 0.89);
 $light-bg: #f8f9fc;
 $currency-color: $text-color;
 $border-price-btn: $text-color;
 $footer-bg: #030a1a;
-$blue-overlay: rgba(20, 54, 122, 0.5);
+$video-overlay: rgba(20, 54, 122, 0.5);
 $slider-overlay: rgba($text-color, 0.89);
 $promo-bg: #000145;
 $advatages-info-color: #2e35ac;
@@ -41,6 +40,3 @@ $retina-dppx: 1.5dppx;
 
 /* animation */
 $animate: 0.2s linear;
-
-/* opacity-size */
-$for-hover: 0.5;

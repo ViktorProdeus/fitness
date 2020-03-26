@@ -49,11 +49,12 @@
   opacity: 1;
 }
 
-.coaches__slide:hover figcaption {
+.coaches__slide:hover b {
   display: none;
 }
 
-.coaches__slide figcaption {
+.coaches__slide b {
+  display: block;
   position: absolute;
   width: 100%;
   top: 0;
@@ -146,7 +147,7 @@
     text-align: center;
   }
 
-  .coaches__slide figcaption {
+  .coaches__slide p {
     transform: translateX(4px);
   }
 
@@ -191,7 +192,7 @@
     height: 274px;
   }
 
-  .coaches__slide figcaption {
+  .coaches__slide b {
     margin-top: 240px;
   }
 

@@ -1,0 +1,262 @@
+.promotion__wrapper {
+  max-width: 1160px;
+  width: 100%;
+
+  margin-top: 52px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.promotion__main-block {
+  margin-right: 40px;
+
+  width: 48.275%;
+  min-height: 462px;
+  display: flex;
+
+  color: white;
+  background-color: $accent-color;
+}
+
+.promotion__main-content {
+  max-width: 50%;
+  width: 100%;
+  height: 462px;
+  padding: 45px 45px 46px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.promotion__main-content strong {
+  display: block;
+
+  margin-top: -6px;
+  font-size: 28px;
+  line-height: 1;
+}
+
+.promotion__main-content span {
+  display: block;
+  margin-top: -16px;
+
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 1.56;
+}
+
+.promotion__main-content p {
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.promotion__link {
+  margin-top: auto;
+  width: 79px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: white;
+  border-bottom: 1px solid white;
+  transition: border-color $animate;
+
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid transparent;
+  }
+}
+
+.promotion__preview {
+  max-width: 50%;
+  width: 100%;
+  min-height: 462px;
+
+  background-color: #4f85e5;
+
+  @include bg-image("../img/desktop/promotion__img@1x.jpg", cover);
+}
+
+@include retina {
+  .promotion__preview {
+    background-image: url("../img/desktop/promotion__img@2x.jpg");
+  }
+}
+
+.promotion__list-blocks {
+  width: 48.275%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.promotion__item-block {
+  width: 100%;
+  margin-bottom: 40px;
+  padding: 28px 28px 26px;
+
+  border-width: 7px;
+  border-style: solid;
+  border-image: linear-gradient(135deg, #d10a42 0%, #00359f 100%);
+  border-image-slice: 1;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  strong {
+    display: block;
+    margin: -10px 0 2px;
+
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.5;
+  }
+
+  p {
+    margin: 0 0 65px;
+  }
+
+  .promotion__link {
+    font-size: 12px;
+    color: $promotion-text-color;
+    border-bottom: 1px solid $promotion-text-color;
+    transition: border-color $animate;
+  }
+}
+
+@media (max-width: $tablet-max) {
+  .promotion__wrapper {
+    margin: 42px auto 0;
+
+    flex-wrap: wrap;
+  }
+
+  .promotion__main-block {
+    margin: 0 auto 30px;
+
+    width: 100%;
+    min-height: 462px;
+    display: flex;
+
+    color: white;
+    background-color: $accent-color;
+  }
+
+  .promotion__main-content {
+    max-width: 41.15%;
+    height: 462px;
+    padding: 45px 40px 46px 45px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .promotion__preview {
+    max-width: 58.85%;
+    min-height: 462px;
+
+    background-image: url("../img/tablet/promotion__img@1x.jpg");
+    background-position: center top;
+  }
+
+  @include retina {
+    .promotion__preview {
+      background-image: url("../img/tablet/promotion__img@2x.jpg");
+    }
+  }
+
+  .promotion__list-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    width: 100%;
+  }
+
+  .promotion__item-block {
+    width: 47.79%;
+    margin: 0 4.4% 0 0;
+
+    p {
+      margin: 0 0 40px;
+      width: 226px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .promotion__item-block:last-child p {
+    margin-bottom: 64px;
+    width: 100%;
+  }
+}
+
+@media (max-width: $mobile-max) {
+  .promotion__main-block {
+    margin-bottom: 29px;
+    flex-wrap: wrap;
+  }
+
+  .promotion__main-content {
+    max-width: 100%;
+    height: auto;
+    padding: 46px 44px 46px 45px;
+
+    text-align: center;
+
+    strong {
+      margin: -6px 0;
+    }
+
+    p {
+      margin-bottom: 34px;
+    }
+  }
+
+  .promotion__link {
+    margin: auto;
+  }
+
+  .promotion__preview {
+    max-width: 100%;
+    min-height: 299px;
+
+    background-image: url("../img/mobile/promotion__img@1x.jpg");
+  }
+
+  @include retina {
+    .promotion__preview {
+      background-image: url("../img/mobile/promotion__img@2x.jpg");
+    }
+  }
+
+  .promotion__item-block {
+    margin: 0 0 30px;
+    padding: 28px 28px 37px;
+    width: 100%;
+
+    text-align: center;
+
+    strong {
+      margin: 0 0 4px;
+    }
+
+    p {
+      margin: 0 auto 17px;
+      padding: 0 28px;
+      width: 100%;
+    }
+  }
+
+  .promotion__item-block:last-child p {
+    margin: 0 auto 19px;
+  }
+}
