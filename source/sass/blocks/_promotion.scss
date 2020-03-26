@@ -21,7 +21,7 @@
 .promotion__main-content {
   max-width: 50%;
   width: 100%;
-  height: 462px;
+  // height: 462px;
   padding: 45px 45px 46px;
 
   display: flex;
@@ -53,8 +53,9 @@
 }
 
 .promotion__link {
+  align-self: flex-start;
   margin-top: auto;
-  width: 79px;
+  padding-top: 20px;
 
   font-weight: 700;
   font-size: 14px;
@@ -91,9 +92,13 @@
 }
 
 .promotion__item-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   width: 100%;
+  min-height: 211px;
   margin-bottom: 40px;
-  padding: 28px 28px 26px;
+  padding: 28px;
 
   border-width: 7px;
   border-style: solid;
@@ -114,7 +119,7 @@
   }
 
   p {
-    margin: 0 0 65px;
+    margin: 0;
   }
 
   .promotion__link {
@@ -132,7 +137,7 @@
 
 @media (max-width: $tablet-max) {
   .promotion__wrapper {
-    margin: 42px auto 0;
+    margin: 41px auto 0;
 
     flex-wrap: wrap;
   }
@@ -141,7 +146,7 @@
     margin: 0 auto 30px;
 
     width: 100%;
-    min-height: 462px;
+    // min-height: 462px;
     display: flex;
 
     color: white;
@@ -150,8 +155,8 @@
 
   .promotion__main-content {
     max-width: 41.15%;
-    height: 462px;
-    padding: 45px 40px 46px 45px;
+    // height: 462px;
+    padding: 44px 40px 46px 45px;
 
     display: flex;
     flex-direction: column;
@@ -184,8 +189,8 @@
     margin: 0 4.4% 0 0;
 
     p {
-      margin: 0 0 40px;
-      width: 226px;
+      margin: 0;
+      padding-right: 85px;
     }
 
     &:last-child {
@@ -194,21 +199,29 @@
   }
 
   .promotion__item-block:last-child p {
-    margin-bottom: 64px;
-    width: 100%;
+    padding-right: 0;
+  }
+
+  .promotion__link {
+    padding-top: 8px;
   }
 }
 
 @media (max-width: $mobile-max) {
+  .promotion__wrapper {
+    margin-top: 42px;
+  }
+
   .promotion__main-block {
-    margin-bottom: 29px;
+    min-height: 100%;
+    margin-bottom: 30px;
     flex-wrap: wrap;
   }
 
   .promotion__main-content {
     max-width: 100%;
-    height: auto;
-    padding: 46px 44px 46px 45px;
+    min-height: 299px;
+    padding: 46px 44px 45px 45px;
 
     text-align: center;
 
@@ -216,13 +229,15 @@
       margin: -6px 0;
     }
 
-    p {
-      margin-bottom: 34px;
-    }
+    // p {
+    //   margin-bottom: 34px;
+    // }
   }
 
   .promotion__link {
-    margin: auto;
+    margin: auto auto 0;
+    padding-top: 0;
+    padding-bottom: 1px;
   }
 
   .promotion__preview {
@@ -247,16 +262,17 @@
 
     strong {
       margin: 0 0 4px;
+      width: 100%;
     }
 
     p {
-      margin: 0 auto 17px;
+      margin: 0 auto;
       padding: 0 28px;
       width: 100%;
     }
   }
 
   .promotion__item-block:last-child p {
-    margin: 0 auto 19px;
+    padding-right: 28px;
   }
 }
