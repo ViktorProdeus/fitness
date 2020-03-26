@@ -65,11 +65,6 @@
   color: white;
   border-bottom: 1px solid white;
   transition: border-color $animate;
-
-  &:hover,
-  &:focus {
-    border-bottom: 1px solid transparent;
-  }
 }
 
 .promotion__preview {
@@ -128,6 +123,11 @@
     border-bottom: 1px solid $promotion-text-color;
     transition: border-color $animate;
   }
+}
+
+.promotion__link:hover,
+.promotion__link:focus {
+  border-bottom: 1px solid transparent;
 }
 
 @media (max-width: $tablet-max) {

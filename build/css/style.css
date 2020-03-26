@@ -2511,8 +2511,6 @@ input[type="radio"].visually-hidden {
   border-bottom: 1px solid white;
   -webkit-transition: border-color 0.2s linear;
   transition: border-color 0.2s linear; }
-  .promotion__link:hover, .promotion__link:focus {
-    border-bottom: 1px solid transparent; }
 
 .promotion__preview {
   max-width: 50%;
@@ -2559,6 +2557,10 @@ input[type="radio"].visually-hidden {
     border-bottom: 1px solid #1c3374;
     -webkit-transition: border-color 0.2s linear;
     transition: border-color 0.2s linear; }
+
+.promotion__link:hover,
+.promotion__link:focus {
+  border-bottom: 1px solid transparent; }
 
 @media (max-width: 1199px) {
   .promotion__wrapper {
