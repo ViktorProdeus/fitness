@@ -10,8 +10,8 @@
       loop: true,
 
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.coaches__button--next',
+        prevEl: '.coaches__button--prev',
       },
 
       breakpoints: {

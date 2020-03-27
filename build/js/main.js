@@ -10,8 +10,8 @@
       loop: true,
 
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.coaches__button--next',
+        prevEl: '.coaches__button--prev',
       },
 
       breakpoints: {
@@ -31,6 +31,40 @@
           slidesPerView: 4,
           slidesPerGroup: 4,
           spaceBetween: 40
+        }
+      }
+    });
+  }
+
+})();
+
+'use strict';
+
+(function () {
+
+  var sliderReviewsBlock = document.querySelector('.reviews__slider');
+
+  if (sliderReviewsBlock) {
+    sliderReviewsBlock = new window.Swiper('.reviews__slider', {
+
+      loop: true,
+
+      navigation: {
+        nextEl: '.reviews__btn--next',
+        prevEl: '.reviews__btn--prev',
+      },
+
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          slidesPerGroup: 1,
+          spaceBetween: 25
+        },
+
+        768: {
+          slidesPerView: 1,
+          slidesPerGroup: 1,
+          spaceBetween: 65
         }
       }
     });
