@@ -1,3 +1,7 @@
+.reviews {
+  padding-bottom: 120px;
+}
+
 .reviews__wrapper {
   position: relative;
   margin: 50px auto 0;
@@ -10,7 +14,6 @@
   min-height: 242px;
   padding: 62px 65px 57px;
 
-  margin-bottom: 200px;
   color: white;
 
   background-color: $blue-bg;

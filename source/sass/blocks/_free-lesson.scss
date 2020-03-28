@@ -1,0 +1,75 @@
+.free-lesson {
+  width: 50%;
+  padding: 68px 0;
+
+  color: white;
+  background-color: $form-bg;
+
+  h2 {
+    text-align: left;
+    margin-left: 15%;
+  }
+}
+
+.free-lesson__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  max-width: 683px;
+}
+
+.free-lesson form {
+  margin: 41px 25% 0 15%;
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.free-lesson__name {
+  width: 50%;
+  padding: 0 4% 0 0;
+}
+
+.free-lesson__phone {
+  width: 50%;
+  padding: 0 0 0 4%;
+}
+
+.free-lesson input {
+  margin-bottom: 30px;
+  padding: 5px 0;
+  width: 100%;
+
+  font-size: 14px;
+  line-height: 1.14;
+  font-family: $font-roboto;
+  color: inherit;
+  background-color: transparent;
+
+  border: 0;
+  border-bottom: 1px solid $input-border;
+  appearance: none;
+  border-radius: 0;
+  outline: none;
+
+  &::placeholder {
+    color: white;
+  }
+}
+
+.free-lesson button {
+  max-width: 100%;
+  width: 100%;
+  padding: 16px 15px 17px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  font-family: $font-roboto;
+  color: inherit;
+  background-color: transparent;
+  outline: none;
+  appearance: none;
+  border: 3px solid white;
+}

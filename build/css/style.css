@@ -916,6 +916,11 @@ button.swiper-pagination-bullet {
       -ms-flex-direction: column;
           flex-direction: column; }
 
+.section-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .hide-text {
   display: none; }
 
@@ -1624,8 +1629,6 @@ input[type="radio"].visually-hidden {
   padding: 0;
   list-style: none;
   display: none;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start; }
@@ -1769,7 +1772,9 @@ input[type="radio"].visually-hidden {
     padding-bottom: 14px;
     font-size: 18px; }
   .subscription__list {
-    max-width: 450px; }
+    max-width: 450px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
   .subscription__item {
     margin: 0 auto 40px;
     width: 442px; }
@@ -2041,7 +2046,7 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/mobile/swimmer@2x.jpg"); } }
 
 .coaches {
-  margin-bottom: 120px; }
+  padding-bottom: 120px; }
 
 .coaches h2 {
   margin: -2px 0 52px 1px;
@@ -2676,6 +2681,9 @@ input[type="radio"].visually-hidden {
   .promotion__item-block:last-child p {
     padding-right: 28px; } }
 
+.reviews {
+  padding-bottom: 120px; }
+
 .reviews__wrapper {
   position: relative;
   margin: 50px auto 0;
@@ -2686,7 +2694,6 @@ input[type="radio"].visually-hidden {
   width: 562px;
   min-height: 242px;
   padding: 62px 65px 57px;
-  margin-bottom: 200px;
   color: white;
   background-color: #1c3374;
   -webkit-box-shadow: 0 0 140px rgba(28, 51, 116, 0.2);
@@ -2805,3 +2812,152 @@ input[type="radio"].visually-hidden {
       left: -9px; }
     .reviews__btn--next {
       right: -9px; } }
+
+.free-lesson {
+  width: 50%;
+  padding: 68px 0;
+  color: white;
+  background-color: #102654; }
+  .free-lesson h2 {
+    text-align: left;
+    margin-left: 15%; }
+
+.free-lesson__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: auto;
+  max-width: 683px; }
+
+.free-lesson form {
+  margin: 41px 25% 0 15%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.free-lesson__name {
+  width: 50%;
+  padding: 0 4% 0 0; }
+
+.free-lesson__phone {
+  width: 50%;
+  padding: 0 0 0 4%; }
+
+.free-lesson input {
+  margin-bottom: 30px;
+  padding: 5px 0;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.14;
+  font-family: "Robotocondensed", "Arial", sans-serif;
+  color: inherit;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #74819c;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0;
+  outline: none; }
+  .free-lesson input::-webkit-input-placeholder {
+    color: white; }
+  .free-lesson input::-moz-placeholder {
+    color: white; }
+  .free-lesson input:-ms-input-placeholder {
+    color: white; }
+  .free-lesson input::-ms-input-placeholder {
+    color: white; }
+  .free-lesson input::placeholder {
+    color: white; }
+
+.free-lesson button {
+  max-width: 100%;
+  width: 100%;
+  padding: 16px 15px 17px;
+  font-size: 14px;
+  line-height: 1.14;
+  font-family: "Robotocondensed", "Arial", sans-serif;
+  color: inherit;
+  background-color: transparent;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 3px solid white; }
+
+.contacts {
+  width: 50%;
+  padding: 68px 0;
+  border-top: 1px solid #74819c; }
+  .contacts h2 {
+    text-align: left;
+    margin-bottom: 46px;
+    padding-left: 17.5%; }
+
+.contacts__wrapper {
+  margin-right: auto;
+  max-width: 683px;
+  width: 100%; }
+
+.contacts__inner-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-right: 14.94%;
+  padding-left: 17.5%; }
+
+.contacts__info,
+.contacts__connection {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.contacts__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 51%;
+  padding: 0 3% 0 0.8%;
+  border-right: 1px solid #74819c; }
+
+.contacts__connection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 49%;
+  padding-left: 13%; }
+
+.contacts__item {
+  margin-bottom: 26px;
+  line-height: 0.8; }
+  .contacts__item:last-child {
+    margin-top: auto;
+    margin-bottom: 0; }
+  .contacts__item b {
+    display: block;
+    margin-bottom: 10px; }
+
+.contacts__link {
+  font-family: "Robotocondensed", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #102654; }

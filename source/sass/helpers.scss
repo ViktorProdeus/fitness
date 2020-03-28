@@ -5,6 +5,10 @@
   flex-direction: column;
 }
 
+.section-wrapper {
+  display: flex;
+}
+
 .hide-text {
   display: none;
 }

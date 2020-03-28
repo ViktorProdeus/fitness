@@ -106,7 +106,6 @@
   list-style: none;
 
   display: none;
-  flex-wrap: wrap;
   justify-content: flex-start;
 
   &--active {
@@ -280,6 +279,7 @@
 
   .subscription__list {
     max-width: 450px;
+    flex-wrap: wrap;
   }
 
   .subscription__item {
