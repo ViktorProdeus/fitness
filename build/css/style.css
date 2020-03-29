@@ -933,7 +933,10 @@ button.swiper-pagination-bullet {
 
 @media (max-width: 1199px) {
   .verticals-paddings {
-    padding: 100px 0; } }
+    padding: 100px 0; }
+  .section-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
 
 @media (max-width: 767px) {
   .verticals-paddings {
@@ -2157,7 +2160,7 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 1199px) {
   .coaches {
-    margin-bottom: 100px; }
+    padding-bottom: 100px; }
   .coaches h2 {
     margin-bottom: 42px;
     text-align: center; }
@@ -2175,7 +2178,7 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 767px) {
   .coaches {
-    margin-bottom: 70px; }
+    padding-bottom: 70px; }
   .coaches h2 {
     margin-bottom: 44px;
     text-align: center; }
@@ -2765,6 +2768,8 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/svg/next.svg"); }
 
 @media (max-width: 1199px) {
+  .reviews {
+    padding-bottom: 99px; }
   .reviews__wrapper {
     position: relative;
     margin-top: 40px;
@@ -2781,6 +2786,8 @@ input[type="radio"].visually-hidden {
     margin: 0 27px 0 0; } }
 
 @media (max-width: 767px) {
+  .reviews {
+    padding-bottom: 71px; }
   .reviews__wrapper {
     margin-top: 42px;
     max-width: 290px; }
@@ -2852,7 +2859,6 @@ input[type="radio"].visually-hidden {
   padding: 0 0 0 4%; }
 
 .free-lesson input {
-  margin-bottom: 30px;
   padding: 5px 0;
   width: 100%;
   font-size: 14px;
@@ -2879,9 +2885,10 @@ input[type="radio"].visually-hidden {
     color: white; }
 
 .free-lesson button {
+  margin-top: 30px;
+  padding: 16px 15px 17px;
   max-width: 100%;
   width: 100%;
-  padding: 16px 15px 17px;
   font-size: 14px;
   line-height: 1.14;
   font-family: "Robotocondensed", "Arial", sans-serif;
@@ -2892,6 +2899,41 @@ input[type="radio"].visually-hidden {
      -moz-appearance: none;
           appearance: none;
   border: 3px solid white; }
+
+@media (max-width: 1199px) {
+  .free-lesson {
+    width: 100%; }
+    .free-lesson h2 {
+      margin-left: 13%; }
+    .free-lesson form {
+      margin: 34px 17.25% 0 13%;
+      width: 100%; }
+    .free-lesson input {
+      padding: 5px 0 7px; }
+  .free-lesson__wrapper {
+    padding: 0 45px;
+    max-width: 100%; }
+  .free-lesson__name {
+    padding: 0 6.5% 0 0; }
+  .free-lesson__phone {
+    padding: 0 0 0 6%; } }
+
+@media (max-width: 767px) {
+  .free-lesson__wrapper {
+    padding: 0 15px; }
+  .free-lesson {
+    width: 100%; }
+    .free-lesson h2 {
+      margin-left: 0; }
+    .free-lesson form {
+      margin: 36px 0 0; }
+    .free-lesson button {
+      margin-top: 6px; }
+  .free-lesson__name,
+  .free-lesson__phone {
+    padding: 0;
+    width: 100%;
+    margin-bottom: 32px; } }
 
 .contacts {
   width: 50%;
@@ -2961,3 +3003,44 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   line-height: 1.2;
   color: #102654; }
+
+@media (max-width: 1199px) {
+  .contacts {
+    width: 100%; }
+    .contacts h2 {
+      padding-left: 13%;
+      margin-bottom: 40px; }
+  .contacts__wrapper {
+    padding: 0 45px;
+    max-width: 100%; }
+  .contacts__inner-content {
+    padding: 0 9.8% 0 13%; }
+  .contacts__info {
+    padding: 0 3% 0 0; }
+  .contacts__connection {
+    padding: 0 0 0 9%; }
+  .contacts__item {
+    margin-bottom: 29px; }
+  .contacts__item b {
+    font-size: 20px;
+    margin-bottom: 15px; }
+  .contacts__link {
+    font-size: 18px; } }
+
+@media (max-width: 767px) {
+  .contacts h2 {
+    margin-bottom: 42px;
+    padding-left: 0; }
+  .contacts__wrapper {
+    padding: 0 15px; }
+  .contacts__inner-content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0; }
+  .contacts__info,
+  .contacts__connection {
+    width: 100%;
+    padding: 0;
+    border-right: none; }
+  .contacts__connection {
+    margin-top: 30px; } }
