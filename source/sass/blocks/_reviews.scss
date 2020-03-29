@@ -103,6 +103,10 @@
 }
 
 @media (max-width: $tablet-max) {
+  .reviews {
+    padding-bottom: 99px;
+  }
+
   .reviews__wrapper {
     position: relative;
     margin-top: 40px;
@@ -131,6 +135,10 @@
 }
 
 @media (max-width: $mobile-max) {
+  .reviews {
+    padding-bottom: 71px;
+  }
+
   .reviews__wrapper {
     margin-top: 42px;
     max-width: 290px;
