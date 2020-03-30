@@ -49,7 +49,6 @@
     };
 
     window.mask = new window.IMask(userPhoneInput, maskOptions);
-
   }
 
 })();

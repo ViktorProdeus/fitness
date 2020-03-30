@@ -1,12 +1,9 @@
 .logo {
-  width: 89px;
-  height: 20px;
-}
-
-.logo img {
-  display: block;
-  width: 100%;
-  height: auto;
+  img {
+    display: block;
+    width: 89px;
+    height: 20px;
+  }
 }
 
 .logo[href] {
@@ -16,5 +13,25 @@
   &:focus {
     opacity: 0.5;
     outline: none;
+  }
+}
+
+@media (max-width: $tablet-max) {
+  .logo {
+    img {
+      display: block;
+      width: 82px;
+      height: 18px;
+    }
+  }
+}
+
+@media (max-width: $mobile-max) {
+  .logo {
+    img {
+      display: block;
+      width: 68px;
+      height: 15px;
+    }
   }
 }

@@ -34,8 +34,6 @@
 }
 
 .contacts__info {
-  display: flex;
-  flex-direction: column;
   width: 51%;
 
   padding: 0 3% 0 0.8%;
@@ -43,8 +41,6 @@
 }
 
 .contacts__connection {
-  display: flex;
-  flex-direction: column;
   width: 49%;
 
   padding-left: 13%;
@@ -56,7 +52,6 @@
   line-height: 0.8;
 
   &:last-child {
-    margin-top: auto;
     margin-bottom: 0;
   }
 
