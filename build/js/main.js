@@ -41,6 +41,22 @@
 'use strict';
 
 (function () {
+  var userPhoneInput = document.querySelector('.free-lesson__phone input');
+
+  if (userPhoneInput) {
+    var maskOptions = {
+      mask: '+{7}(000)000-00-00'
+    };
+
+    window.mask = new window.IMask(userPhoneInput, maskOptions);
+
+  }
+
+})();
+
+'use strict';
+
+(function () {
 
   var sliderReviewsBlock = document.querySelector('.reviews__slider');
 
@@ -67,6 +83,33 @@
           spaceBetween: 65
         }
       }
+    });
+  }
+
+})();
+
+'use strict';
+
+(function () {
+  var headerButton = document.querySelector('.main-header__btn');
+
+  var footerLogo = document.querySelector('.main-footer__logo');
+
+  var subscriptionBlock = document.querySelector('.subscription');
+
+  var headerBlock = document.querySelector('.main-header');
+
+  var moveTo = new window.MoveTo();
+
+  if (headerButton) {
+    headerButton.addEventListener('click', function () {
+      moveTo.move(subscriptionBlock);
+    });
+  }
+
+  if (footerLogo) {
+    footerLogo.addEventListener('click', function () {
+      moveTo.move(headerBlock);
     });
   }
 
