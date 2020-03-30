@@ -64,8 +64,13 @@
     display: block;
     margin-bottom: 10px;
   }
+
+  p {
+    margin: 0;
+  }
 }
 
+.contacts__item p,
 .contacts__link {
   font-family: $font-roboto;
   font-size: 14px;
@@ -77,6 +82,7 @@
 @media (max-width: $tablet-max) {
   .contacts {
     width: 100%;
+    padding-bottom: 65px;
 
     h2 {
       padding-left: 13%;
@@ -110,12 +116,17 @@
     margin-bottom: 15px;
   }
 
+  .contacts__item p,
   .contacts__link {
     font-size: 18px;
   }
 }
 
 @media (max-width: $mobile-max) {
+  .contacts {
+    padding-bottom: 66px;
+  }
+
   .contacts h2 {
     margin-bottom: 42px;
     padding-left: 0;

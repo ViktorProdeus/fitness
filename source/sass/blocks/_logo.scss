@@ -1,0 +1,20 @@
+.logo {
+  width: 89px;
+  height: 20px;
+}
+
+.logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.logo[href] {
+  transition: opacity $animate;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+    outline: none;
+  }
+}
