@@ -3,7 +3,6 @@
   background-color: $footer-bg;
 
   a {
-    // display: block;
     color: white;
     transition: opacity $animate;
 
@@ -28,23 +27,18 @@
 
   width: 88px;
   min-height: 40px;
-
-  // transform: translateX(-5px);
 }
 
 .main-footer__nav-list {
+  min-width: 430px;
+
   margin: 0 0 0 50px;
   padding: 0;
-
-  // max-width: 442px;
-  // width: 100%;
-
-  // transform: translateX(12px);
 
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .main-footer__nav-item {
@@ -66,24 +60,18 @@
 .main-footer__social-list {
   margin: 0;
   padding: 0;
-  min-width: 120px;
-
-  // transform: translateX(5px);
+  min-width: 136px;
 
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
 .main-footer__social-item {
   margin-left: 5px;
   transform: translateX(15px);
-
-  &:first-child {
-    margin-right: 3px;
-  }
 }
 
 .main-footer__social-link {
@@ -92,8 +80,7 @@
   justify-content: center;
   width: 40px;
   height: 40px;
-  // display: block;
-  // padding: 5px;
+
   transition: opacity $animate;
 
   &:hover,
@@ -130,14 +117,11 @@
   .main-footer__logo {
     width: 82px;
     height: 18px;
-
-    //   transform: translateX(-6px);
   }
 
   .main-footer__nav-list {
-    margin: 0 0 0 58px;
-
-    // transform: translateX(10px);
+    margin: 0 0 0 54px;
+    min-width: 395px;
   }
 
   .main-footer__nav-item {
@@ -145,7 +129,7 @@
   }
 
   .main-footer__social-list {
-    min-width: 140px;
+    min-width: 129px;
   }
 
   .main-footer__social-item {
@@ -173,6 +157,7 @@
   .main-footer__nav-list {
     display: block;
     max-width: 290px;
+    min-width: 100%;
     margin: 0;
     width: 100%;
 
@@ -198,21 +183,20 @@
 
   .main-footer__social-list {
     margin: 12px 0 0;
-    width: 164px;
     transform: translateX(0);
   }
 
   .main-footer__social-item {
-    margin-right: 15px;
+    margin-right: 25px;
     margin-left: 0;
-    transform: translateX(-6px);
-
-    &:first-child {
-      margin-right: 25px;
-    }
+    transform: translateX(-5px);
 
     &:last-child {
       margin-right: 0;
+    }
+
+    &--fb {
+      margin: -10px;
     }
   }
 

@@ -9,6 +9,14 @@
     text-align: left;
     margin-left: 15%;
   }
+
+  .active {
+    border-bottom: 1px solid white;
+  }
+
+  .error {
+    border-bottom: 1px solid red;
+  }
 }
 
 .free-lesson__wrapper {
