@@ -4845,8 +4845,6 @@
 
 })));
 
-'use strict';
-
 /*!
  * MoveTo - A lightweight scroll animation javascript library without any dependency.
  * Version 1.8.2 (28-06-2019 14:30)

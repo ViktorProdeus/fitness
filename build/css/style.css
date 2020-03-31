@@ -1558,7 +1558,8 @@ input[type="radio"].visually-hidden {
             transform: translate(1px, 2px); } }
 
 .subscription {
-  background-color: #f8f9fc; }
+  background-color: #f8f9fc;
+  padding-bottom: 80px; }
 
 .subscription__wrapper {
   position: relative;
@@ -1570,7 +1571,7 @@ input[type="radio"].visually-hidden {
     content: "";
     right: 0;
     bottom: 0;
-    margin-bottom: -270px;
+    margin-bottom: -230px;
     margin-right: -222px;
     z-index: -1;
     background-image: url("../img/desktop/chips@1x.png");
@@ -1654,6 +1655,8 @@ input[type="radio"].visually-hidden {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-animation-name: fadeIn;
             animation-name: fadeIn;
     -webkit-animation-duration: 2s;
@@ -1676,9 +1679,9 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 40px 0 0;
+  margin: 0 3.5% 40px 0;
   padding: 62px 30px 67px;
-  width: 360px;
+  width: 31%;
   min-height: 448px;
   text-align: center;
   background-color: white; }
@@ -1776,8 +1779,10 @@ input[type="radio"].visually-hidden {
   border-width: 2px; }
 
 @media (max-width: 1199px) {
-  .subscription h2 {
-    margin-top: 0; }
+  .subscription {
+    padding-bottom: 100px; }
+    .subscription h2 {
+      margin-top: 0; }
   .subscription__data-list {
     margin: 29px auto 42px;
     padding: 0;
@@ -1815,8 +1820,10 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/tablet/chips@2x.png"); } }
 
 @media (max-width: 767px) {
-  .subscription h2 {
-    margin-top: -1px; }
+  .subscription {
+    padding-bottom: 70px; }
+    .subscription h2 {
+      margin-top: -1px; }
   .subscription__data-list {
     width: 290px;
     margin: 21px auto 33px; }
@@ -1900,8 +1907,8 @@ input[type="radio"].visually-hidden {
   margin-bottom: 8px; }
 
 .promo__header h3 {
-  margin: 0 50px 0 0;
-  width: 201px;
+  margin: 0 14.5% 0 0;
+  width: 58%;
   font-family: "BebasNeue", "Arial", sans-serif;
   font-weight: 700;
   font-size: 90px;
@@ -3010,6 +3017,13 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   line-height: 1.2;
   color: #102654; }
+
+.contacts__link {
+  -webkit-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear; }
+  .contacts__link:hover, .contacts__link:focus {
+    opacity: 0.5;
+    outline: none; }
 
 @media (max-width: 1199px) {
   .contacts {

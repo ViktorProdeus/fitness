@@ -1,5 +1,6 @@
 .subscription {
   background-color: #f8f9fc;
+  padding-bottom: 80px;
 }
 
 .subscription__wrapper {
@@ -14,7 +15,7 @@
     content: "";
     right: 0;
     bottom: 0;
-    margin-bottom: -270px;
+    margin-bottom: -230px;
     margin-right: -222px;
     z-index: -1;
 
@@ -110,6 +111,7 @@
 
   &--active {
     display: flex;
+    flex-wrap: wrap;
 
     animation-name: fadeIn;
     animation-duration: 2s;
@@ -127,9 +129,9 @@
   flex-direction: column;
   align-items: center;
 
-  margin: 0 40px 0 0;
+  margin: 0 3.5% 40px 0;
   padding: 62px 30px 67px;
-  width: 360px;
+  width: 31%;
   min-height: 448px;
 
   text-align: center;
@@ -254,8 +256,12 @@
 }
 
 @media (max-width: $tablet-max) {
-  .subscription h2 {
-    margin-top: 0;
+  .subscription {
+    padding-bottom: 100px;
+
+    h2 {
+      margin-top: 0;
+    }
   }
 
   .subscription__data-list {
@@ -317,8 +323,12 @@
 }
 
 @media (max-width: $mobile-max) {
-  .subscription h2 {
-    margin-top: -1px;
+  .subscription {
+    padding-bottom: 70px;
+
+    h2 {
+      margin-top: -1px;
+    }
   }
 
   .subscription__data-list {

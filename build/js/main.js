@@ -225,7 +225,7 @@
 
     if (checkNameInputValidity() && checkPhoneInputValidity()) {
       removeInputListener();
-      setTimeout( function () {
+      setTimeout(function () {
         form.reset();
       }, 500);
     }

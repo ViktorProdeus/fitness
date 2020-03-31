@@ -74,6 +74,16 @@
   color: $text-color;
 }
 
+.contacts__link {
+  transition: opacity $animate;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+    outline: none;
+  }
+}
+
 @media (max-width: $tablet-max) {
   .contacts {
     width: 100%;
